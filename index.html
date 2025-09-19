@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+      body {
+        margin: 0;
+        /* height: 100vh; */
+      }
+      </style>
+      <script src="./script.js" defer></script>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+      <title>カード合わせ</title>
+      <style>
+        #clock{ font-size:30px; }
+        #field{ width: 610px; }
+        .card {
+            width:100px;
+            height:100px;
+            line-height:100px;
+            background-image: url('./image/image0.png'); /* 初期画像 */
+            background-size: cover;
+            background-position: center;
+            text-align:center;
+            border:3px solid #040453;
+            border-radius:50px;
+            font-size:0px;
+            margin:8px;
+            float:left;
+            background-color: beige;
+        }
+      </style>
+   </head>
+
+  <nav id="menu">
+    <ul>    
+      <li><a href="#LAST">ご参考）配置を記憶するVer.</a></li>
+    </ul>
+  </nav>
+  <style>
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+  </style>
+
+   <body>
+      <script>
+        document.body.style.backgroundImage = "url('./image/Day20_0bk.png')";
+        document.body.style.backgroundSize = "auto"; // 画像を画面全体にフィット
+        document.body.style.backgroundPosition = "center"; // 中央に配置
+      </script>
+      <h1>カード合わせ：何秒で完成？？　
+          <button class="btn" onclick="reload()">もう一回あそぶ</button>
+      </h1>
+
+      <div class="square1">
+        <input type="text" class="inputText2" placeholder="偶数で枚数を入力(4～24)してください">
+        <button class="btn2" onclick="handleClick()">決定</button>
+      </div>
+      <h3>
+        <div id="textGameEnd"></div>
+      </h3>
+      <style>
+        .custom-height {
+        height: 40px;
+        }
+      </style>
+      <script>
+        const h3Element = document.querySelector('h3');
+        h3Element.classList.add('custom-height');
+      </script>
+      
+      <div id ="clock">　</div>
+      <div id ="field"></div>
+      
+   </body>
+    
+    <br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <div id="LAST"></div>
+ 
+  <h2>カード配置を記憶するVer.<br><br>
+    <img src="image\Day20_4.png" alt="付け添え画像3" width="750" height="400"><br><br>
+    <!-- <button class="btn3" onclick="try3()">1.試す</button> -->
+    <button class="btn3" onclick="handleClick2()">1.試す</button>
+    <button class="btn3" onclick="try4()">2.全て裏返す</button>
+    <button class="btn3" onclick="try5()">3.音声認識</button>
+  </h2>
+
+  <style>
+    #field3{ width: 550px; }
+    .card3 {
+        width:100px;
+        height:100px;
+        line-height:100px;
+        background-size: cover;
+        background-position: center;
+        text-align:center;
+        border:3px solid #6b5b65;
+        border-radius:50px;
+        font-size:30px;
+        margin:8px;
+        float:left;
+        background-color: beige;
+    }
+  </style>
+
+  <body>
+    <div id ="field3"></div>
+  </body>
+
+  <h4>
+    <p id="text">　</p>
+        <br><br><br><br><br><br><br><br><br>
+  </h4>
+
+  <h5>
+    <br><br><br><br><br><br><br>
+    <nav class="menu3">
+      <ul>
+        <li><a href="#menu">　3h*20日間ありがとうございました　（上に戻る）　</a></li>
+      </ul>
+    </nav>
+    <br><br>
+  </h5>
+</html>
